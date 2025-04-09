@@ -16,7 +16,11 @@ function getComputerChoice() {
     }
 }
 
-// prompt user choice
+// prompt player choice
+function getPlayerChoice() {
+    return prompt("Choose rock, paper or scissors").toLowerCase();
+}
+
 
 // play round
 // compare user choice against computer choice
