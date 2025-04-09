@@ -47,17 +47,18 @@ function playRound() {
 function playGame() {
     for (let i = 1; i <= 5; i++) {
         console.log(`We are now playing round ${i}!`)
-        playRound(playerScore, computerScore);
+        playRound();
         console.log(`Currently the score is:
-player: ${playerScore}
-computer: ${computerScore}`);
+            player: ${playerScore}
+            computer: ${computerScore}`);
     }
     console.log(`The final score is:
-player: ${playerScore}
-computer: ${computerScore}`)
+        player: ${playerScore}
+        computer: ${computerScore}`);
+    playerScore > computerScore ? console.log("You win!") : console.log("The computer wins.");
 }
 
-// Initialize scores
+// Initialize scores and play game
 let playerScore = 0;
 let computerScore = 0;
 playGame();
